@@ -6,7 +6,6 @@ $cyan = "\033[36m";
 $yellow = "\033[93m";
 $bold = "\033[5m";
 $white = "\033[0m";
-$blue = "\080071[91m";
 /*Form*/
 $date   = date('d-M-Y H:i');
 //system("clear");
@@ -20,13 +19,13 @@ echo $red . "
 ░╚════╝░╚══════╝░░░╚═╝░░░░╚════╝░╚═╝░░░░░╚═╝
 
 ";
-echo $blue . "==================================";
+echo $white . "==================================";
 echo $bold . $white . "\nCoder   : 𝔸𝕙𝕞𝕒𝕕 𝔻𝕖𝕧
 Code    : PHP
 Note: 
 Bakar bena freeya lol.!! \n";
 echo $bold . $white . "DMYH    : $date\n";
-echo $blue . "==================================\n";
+echo $white . "==================================\n";
 echo $bold . $white . "Count      : ";
 $count = trim(fgets(STDIN,1024));
 echo $bold . $white . "Delay      : ";
