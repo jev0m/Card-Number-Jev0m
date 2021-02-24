@@ -1,1 +1,2 @@
-# Card-Number-Jev0m
+# Card-Number
+Cari cc dari termux
