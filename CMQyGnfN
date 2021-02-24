@@ -6,6 +6,7 @@ $cyan = "\033[36m";
 $yellow = "\033[93m";
 $bold = "\033[5m";
 $white = "\033[0m";
+$blue = "\080071[91m";
 /*Form*/
 $date   = date('d-M-Y H:i');
 //system("clear");
