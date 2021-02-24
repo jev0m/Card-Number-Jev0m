@@ -36,18 +36,18 @@ $var = '/<div class="col2">(.*?)<\/div>/s';
 preg_match_all($var, $str, $matches);
 echo $green . "\n $$$$$$$$$$$$$$$ MORE INFORMATION $$$$$$$$$$$$$$$\n";
 echo $bold . $cyan . "[name : ".str_replace("</span>", "", str_replace('<span class="name">', "", $matches[1][3]))."]".
-"==================================\n".
+
 		" [address : ".$matches[1][8]."]".
-"==================================\n".
+
 		" [phone : ".$matches[1][9]."]\n";
 
 echo $green . "\n $$$$$$$$$$$$$$$ CARD INFORMATION $$$$$$$$$$$$$$$\n";
 echo $bold . $green . "[email : ".$matches[1][10]."]".
-"==================================\n".
+
 		" [card number : ".str_replace(" ", "", $matches[1][14])."]".
-"==================================\n".
+
 		" [cvv : ".$matches[1][16]."]".
-"==================================\n".
+
 		" [exp-date : ".$matches[1][15]."]\n";
 	sleep($sleep);
 }
