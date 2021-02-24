@@ -35,19 +35,31 @@ $str = file_get_contents("http://namegenerators.org/fake-name-generator-us/");
 $var = '/<div class="col2">(.*?)<\/div>/s';
 preg_match_all($var, $str, $matches);
 echo $green . "\n $$$$$$$$$$$$$$$ MORE INFORMATION $$$$$$$$$$$$$$$\n";
+
 echo $bold . $cyan . "[name : ".str_replace("</span>", "", str_replace('<span class="name">', "", $matches[1][3]))."]";
+
 echo $bold . $white . "==================================";
+
 echo $bold . $cyan . " [address : ".$matches[1][8]."]";
+
 echo $bold . $white . "==================================";
+
 echo $bold . $cyan . " [phone : ".$matches[1][9]."]\n";
 
 echo $green . "\n $$$$$$$$$$$$$$$ CARD INFORMATION $$$$$$$$$$$$$$$\n";
+
 echo $bold . $cyan . "[email : ".$matches[1][10]."]";
+
 echo $bold . $white . "==================================";
+
 echo $bold . $cyan . " [card number : ".str_replace(" ", "", $matches[1][14])."]";
+
 echo $bold . $white . "==================================";
+
 echo $bold . $cyan . " [cvv : ".$matches[1][16]."]";
+
 echo $bold . $white . "==================================";
+
 echo $bold . $cyan . " [exp-date : ".$matches[1][15]."]\n";
 	sleep($sleep);
 }
